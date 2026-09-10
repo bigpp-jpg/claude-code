@@ -520,13 +520,33 @@ Three fixed roles, run in a single pass, in this order:
 }
 ```
 
-**Standing open item:** Aušra's own Model A diagram appendix (the six
+**Resolved item (was open):** Aušra's own Model A diagram appendix (the six
 miniature per-type diagrams at the end of «Модель информационного
-метаболизма», *dual.pdf* pp. 38–39) uses graphical symbols
-(■▪●▲□⌐○△) that were lost/garbled by PDF text extraction in this session.
-Until that page is re-supplied as an image (or manually transcribed symbol
-by symbol per the legend in §1.1), **any Model A block-assignment claim for
-a specific sociotype is external-cross-reference-only, not primary-source-
-verified** — the Skeptic in step (c) above must flag this every time a
-block table is asserted, and the Synthesizer must reflect it in
-`overall_confidence` rather than presenting a memorized table as settled.
+метаболизма», *dual.pdf* pp. 38–39) was unreadable from PDF text
+extraction (graphical symbols ■▪●▲□⌐○△ were lost), but was successfully
+read from a supplied image and decoded against her own legend (§1.1).
+Cross-checked internally via the duality identity — dual pairs satisfy
+Ego(A) = Super-Id(B) and Super-Ego(A) = Id(B) — across all six types shown,
+with zero inconsistencies:
+
+| Type | Ego | Super-Ego | Super-Id | Id |
+|---|---|---|---|---|
+| ILE (Ne-Ti) | Ne, Ti | Fi, Se | Fe, Si | Ni, Te |
+| SLE (Se-Ti) | Se, Ti | Fi, Ne | Fe, Ni | Si, Te |
+| SEI (Si-Fe) | Si, Fe | Te, Ni | Ti, Ne | Se, Fi |
+| LIE (Te-Ni) | Te, Ni | Si, Fe | Se, Fi | Ti, Ne |
+| LSE (Te-Si) | Te, Si | Ni, Fe | Ne, Fi | Ti, Se |
+| ESI (Fi-Se) | Fi, Se | Ne, Ti | Ni, Te | Fe, Si |
+
+**This overturned this session's own earlier LIE scoring**, which had
+Super-Ego and Super-Id swapped ({Se,Fi} and {Fe,Si} respectively, backwards
+from the verified {Si,Fe} and {Se,Fi} above) — a direct demonstration of
+why step (c) in this protocol exists. Only 6 of the 16 types have been
+primary-source-verified this way; for any type not in the table above,
+step (c) still applies in full — treat a memorized block table as
+external-cross-reference-only until its own diagram is decoded the same
+way. **Not yet resolved even for the 6 verified types:** Aušra's diagram
+labels the 4 blocks only, not which element within a block is the
+lower- vs higher-numbered position (e.g. Role vs Vulnerable, Suggestive
+vs Mobilizing) — that finer split still requires case-by-case behavioral
+evidence, not a fixed sub-table.
