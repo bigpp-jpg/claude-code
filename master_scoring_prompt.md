@@ -467,3 +467,66 @@ Field rules:
   "reasoning_summary": "Ne shows Aušra's own definition of the Super-Id/anti-conscience pattern precisely: 'обвинения человека по отношению к окружающим за его недостаточно хорошее самочувствие' — blame directed outward at other people for one's own unmet need — combined with an explicit admission of low personal agency in generating the element. This is not Ego (no self-generation) and not Super-Ego (no self-directed obligation or normative anxiety) — it is Super-Id specifically. Ni is unmarked, confident, unexplained, and un-anxious despite being unusual — Ego-register. Te and Se are not discussed in the sample at all, so per Guardrail 4 they are marked insufficient_evidence rather than inferred from silence."
 }
 ```
+
+---
+
+## 6. Verification Debate Protocol (Adversarial Review)
+
+**Invocation:** "Run the debate protocol on: [user text]" or "Debate-check
+this typing: [prior JSON output]."
+
+Three fixed roles, run in a single pass, in this order:
+
+1. **The Typist** — Produces (or restates) a typing per Sections 1–5. Must
+   show per-element evidence quotes and the specific Model A block
+   assignment actually used — not just the final sociotype code.
+
+2. **The Skeptic** — Does not re-type. Attacks only the Typist's output, and
+   must address all four of these failure modes explicitly (a silent skip
+   is not a pass):
+   - **(a) Self-aggrandizing bias** (Guardrail 1) — did any score rest on a
+     literal self-label rather than the surrounding linguistic structure?
+   - **(b) Register confusion** — was Super-Ego "normative" language (§1.3)
+     read as Ego confidence anywhere, or Super-Id craving/blame (§1.2) read
+     as Ego generativity?
+   - **(c) Model A structural violation** — does the claimed block
+     assignment for this sociotype match a source that's actually been
+     verified this session? If it rests on memorized general knowledge
+     rather than a primary Aušra diagram that was actually read, say so
+     explicitly — don't present recalled consensus as verified fact.
+   - **(d) Evidence cherry-picking** — for every scored element, is there a
+     quote elsewhere in the same text that fits a *different* block equally
+     well or better? Name it if so, don't just assert it might exist.
+
+3. **The Synthesizer** — Resolves each Skeptic point individually
+   (`uphold` / `revise` / `insufficient_evidence` — no other outcomes) and
+   outputs a **revision delta** against the Typist's original output, not a
+   fresh JSON block from scratch:
+
+```json
+{
+  "revisions": [
+    {
+      "element": "Fi",
+      "original_block": "Vulnerable",
+      "challenge": "outward-craving quote fits Suggestive at least as well",
+      "resolution": "insufficient_evidence",
+      "new_block": "unchanged — flagged low-confidence",
+      "confidence_delta": -25
+    }
+  ],
+  "sociotype_placement": "unchanged | <new code>",
+  "overall_confidence": 0
+}
+```
+
+**Standing open item:** Aušra's own Model A diagram appendix (the six
+miniature per-type diagrams at the end of «Модель информационного
+метаболизма», *dual.pdf* pp. 38–39) uses graphical symbols
+(■▪●▲□⌐○△) that were lost/garbled by PDF text extraction in this session.
+Until that page is re-supplied as an image (or manually transcribed symbol
+by symbol per the legend in §1.1), **any Model A block-assignment claim for
+a specific sociotype is external-cross-reference-only, not primary-source-
+verified** — the Skeptic in step (c) above must flag this every time a
+block table is asserted, and the Synthesizer must reflect it in
+`overall_confidence` rather than presenting a memorized table as settled.
