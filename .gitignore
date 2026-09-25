@@ -2,3 +2,8 @@
 
 __pycache__/
 *.pyc
+
+# Personal Claude Code skill tooling (npx skills), not part of this project
+.agents/
+.claude/skills/
+skills-lock.json
